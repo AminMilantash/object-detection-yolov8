@@ -4,7 +4,6 @@ This project implements object detection using the YOLOv8 model. It includes tra
 
 ## Features
 - YOLOv8 training and evaluation
-- Custom dataset support
 - Live demo with Streamlit
 
 ## Folder Structure
