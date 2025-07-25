@@ -1,7 +1,12 @@
 from ultralytics import YOLO
 
-# Load model
-model = YOLO('yolov8n.yaml')  # or 'yolov8n.pt' for pretrained
+model = YOLO('yolov8n.yaml')
 
-# Train model
-model.train(data='dataset/data.yaml', epochs=50, imgsz=640)
+model.train(
+    data='dataset/data.yaml',
+    epochs=50,
+    imgsz=640,
+    batch=8,
+    name='car-detection-fixed',
+    augment=True
+)
